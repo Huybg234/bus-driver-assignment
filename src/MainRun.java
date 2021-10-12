@@ -23,8 +23,10 @@ public class MainRun {
         System.out.println(drivers);
         System.out.println("-------------Danh sách tuyến đường-------------");
         busLines = (List<BusLine>) FileUtil.readDataFromFile("busLineList.txt");
+        System.out.println(busLines);
         System.out.println("______________Danh sách phân công______________");
         driverAssignments = (List<DriverAssignment>) FileUtil.readDataFromFile("driverAssignmentList.txt");
+        System.out.println(driverAssignments);
         menu();
     }
 

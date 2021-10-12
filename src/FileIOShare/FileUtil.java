@@ -29,7 +29,7 @@ public class FileUtil {
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(fileName))) {
             return (List)objectInputStream.readObject();
         } catch (IOException | ClassNotFoundException e) {
-//            e.printStackTrace();
+            e.printStackTrace();
         }
         return new ArrayList<>();
     }
